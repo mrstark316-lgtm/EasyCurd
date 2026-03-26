@@ -11,7 +11,7 @@ export const getConfig = (key, defaultValue = '') => {
 
 // Specific getters for common config values
 export const getApiUrl = () => {
-  const apiUrl = getConfig('VITE_API_URL', 'http://localhost:8080/api');
+  const apiUrl = getConfig('VITE_API_URL', '/api');
   console.log('API URL:', apiUrl); // Debug log
   return apiUrl;
 };
